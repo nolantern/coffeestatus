@@ -21,10 +21,10 @@
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<!-- css, etc... -->
-	<link href="/css/styles.css" rel="stylesheet">
-	<link rel="manifest" href="/manifest.json">
+	<link href="./css/styles.css" rel="stylesheet">
+	<link rel="manifest" href="./manifest.json">
 	<!-- ios support -->
-	<link rel="apple-touch-icon" href="/icons/icon-96x96.png">
+	<link rel="apple-touch-icon" href="./icons/icon-96x96.png">
 	<meta name="apple-mobile-web-app-status-bar" content="#aa7700">
 	<meta name="theme-color" content="#FFE1C4">
 </head>
@@ -44,18 +44,20 @@
 	</p> <br>
 	<p>
 		<h5>Report coffe dispenser status</h5> 
-		<button class="mdc-button">
+		<div class="report-container">
+		<button id="btn-error" class="mdc-button btn-error">
 			<div class="mdc-button__ripple"></div>
 			<i class="material-icons mdc-button__icon notranslate"
 				aria-hidden="true">thumb_down</i>
 			<span class="mdc-button__label">Out of Work</span>
 		</button>
-		<button class="mdc-button">
+		<button id="btn-fixed" class="mdc-button btn-fixed">
 			<div class="mdc-button__ripple"></div>
 			<i class="material-icons mdc-button__icon notranslate"
 				aria-hidden="true">thumb_up</i>
 			<span class="mdc-button__label">Working</span>
 		</button>
+		</div>
 	</p>
 </div>
 
@@ -91,9 +93,9 @@
 
 	<!-- scripts -->
 	<script src=""></script>
-	<script src="/js/app.js"></script>
-	<script src="/js/db.js"></script>
-	<script src="/js/ui.js"></script>
+	<script src="./js/app.js"></script>
+	<script src="./js/db.js"></script>
+	<script src="./js/ui.js"></script>
 </body>
 
 </html>
