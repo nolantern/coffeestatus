@@ -66,7 +66,7 @@ recipeContainer.addEventListener('click', evt => {
 // send info to server
 function statusWork(works){
 	// generate timestamp
-	let ts = 1
+	let ts = Date.now()
 	
 	db.collection('coffee-dispenser').doc(cdid).set(
 	{
