@@ -2,7 +2,10 @@ document.addEventListener('DOMContentLoaded', function () {
 // init material btn
 const MDCRipple = mdc.ripple.MDCRipple;
 const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
- });
+
+document.getElementById("btn-error").addEventListener('click', statusWork(false));
+document.getElementById("btn-fixed").addEventListener('click', statusWork(true));
+});
   
 
 

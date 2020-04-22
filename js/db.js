@@ -1,6 +1,8 @@
 // obeTbmW1e8xjk5Wt9qLc
 // offline data
 
+const cdid = 'obeTbmW1e8xjk5Wt9qLc'; // coffee dispenser id
+
 db.enablePersistence()
     .catch(err => {
         if (err.code == 'failed-precondition') {
@@ -29,6 +31,7 @@ db.collection('coffee-dispenser').onSnapshot(snapshot => {
 });
 
 
+/*
 // add new recipe TODO löschen
 
 const recipeForm = document.querySelector('.add-recipe');
@@ -57,4 +60,39 @@ recipeContainer.addEventListener('click', evt => {
         const id = evt.target.getAttribute('data-id');
         db.collection('recipes').doc(id).delete()
     }
+});
+*/
+
+// send info to server
+function statusWork(works){
+	alert("btn clicked :" + works);
+	
+	// generate timestamp
+	let ts = 1
+	
+	db.collection('coffee-dispenser').doc(cdid).set(
+	{
+		coffee : works,
+		timestamp : ts
+	}).then( () => {
+		alert("db written");
+		console.log("db document succesful written");
+	}).catch( err => {
+		alert("db error: "+ err)
+		console.log("db write error:" + err)
+	})
+};
+		
+		/*
+        db.collection('coffee-dispenser').doc(cdid).set({
+			key : value
+			
+			
+		})
+		.then( () => {
+			console.log("db document succesful written");
+		})
+		.catch( err => {
+			console.log(err)
+		})*/
 });
