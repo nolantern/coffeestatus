@@ -81,7 +81,7 @@ function statusWork(works){
 		alert("db error: "+ err)
 		console.log("db write error:" + err)
 	})
-};
+}
 		
 		/*
         db.collection('coffee-dispenser').doc(cdid).set({
@@ -95,4 +95,4 @@ function statusWork(works){
 		.catch( err => {
 			console.log(err)
 		})*/
-});
+
