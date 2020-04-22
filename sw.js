@@ -14,12 +14,12 @@ const dynamicCacheName = 'site-dynamic-v4';
 // todo assets anpassen
   // cache external content
 const assets = [
-    '/',
-    '/index.html',
-    '/manifest.json',
-    '/js/app.js',
-    '/js/ui.js',
-    '/css/styles.css',
+    '.',
+    './index.html',
+    './manifest.json',
+    './js/app.js',
+    './js/ui.js',
+    './css/styles.css',
 	// TODO '/pages/fallback.html',
 	// external resources
 	  // materil icon css and icons
