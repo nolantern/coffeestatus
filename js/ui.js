@@ -43,14 +43,14 @@ const renderStatus = data => {
 		statusIcon.innerHTML = 'error';
 		statusIcon.style.color = 'red';
 		statusText.innerHTML = 'Coffee not working!';
-
+	/*
 	} else if (!data.milk) {
 		// coffee working, milk not
 
 		statusIcon.innerHTML = 'warning';
 		statusIcon.style.color = 'orange';
 		statusText.innerHTML = 'Coffee ok but no Milk!';
-
+		*/
 	} else {
 		// everything working
 		statusIcon.innerHTML = 'check_circle';
