@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-// init material btn
-const MDCRipple = mdc.ripple.MDCRipple;
-const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
- });
-  
+	// init material btn
+	const MDCRipple = mdc.ripple.MDCRipple;
+	const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
+});
+
+document.getElementById("btn-error").addEventListener('click', () => {
+	statusWork(false)
+}, false);
+document.getElementById("btn-fixed").addEventListener('click', () => {
+	statusWork(true)
+}, false);
 
 
 
@@ -52,13 +58,4 @@ const renderStatus = data => {
 		statusText.innerHTML = ' Everything OK';
 	}
 
-	// if (Date.now() - data.timestamp.toMillis() < 10000 ) {
-	// 	udtIcon.innerHTML = 'check_circle_outlined';
-	// 	udtIcon.style.color = 'green';
-	// 	udtText.innerHTML = ' uptodate';
-	// } else {
-	// 	udtIcon.innerHTML = 'warning';
-	// 	udtIcon.style.color = 'orange';
-	// 	udtText.innerHTML = ' outdated!';
-	// }
-  };
+};
