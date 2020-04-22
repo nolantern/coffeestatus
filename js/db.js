@@ -65,20 +65,16 @@ recipeContainer.addEventListener('click', evt => {
 
 // send info to server
 function statusWork(works){
-	alert("btn clicked :" + works);
-	
 	// generate timestamp
-	let ts = 1
+	let ts = Date.now()
 	
 	db.collection('coffee-dispenser').doc(cdid).set(
 	{
 		coffee : works,
 		timestamp : ts
 	}).then( () => {
-		alert("db written");
 		console.log("db document succesful written");
 	}).catch( err => {
-		alert("db error: "+ err)
 		console.log("db write error:" + err)
 	})
 }
