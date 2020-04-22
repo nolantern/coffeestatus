@@ -2,13 +2,13 @@
 To limit number of dynamic cached files change cacheDynSize
 -1 to disable limitation
 */
-const cacheDynSize = 0;
+const cacheDynSize = -1;
 
 /*
 To update service worker and refreshe cache increase ...CacheName version
 */
-const staticCacheName = 'site-static-v3';
-const dynamicCacheName = 'site-dynamic-v3';
+const staticCacheName = 'site-static-v4';
+const dynamicCacheName = 'site-dynamic-v4';
 
 // static cached assets
 // todo assets anpassen
