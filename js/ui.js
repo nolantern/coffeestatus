@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-	// init material btn
-	const MDCRipple = mdc.ripple.MDCRipple;
-	const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
-
 	// init sidenav materialize
 	const SideNav = document.querySelectorAll('.sidenav');
     const sideNavInstances = M.Sidenav.init(SideNav);
