@@ -4,3 +4,7 @@
     --secondary: #FFE1C4;
     --title: #FF8816;
   }
+
+  .sidenav{
+    max-width: 80%;
+  }

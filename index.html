@@ -30,36 +30,55 @@
 </head>
 
 <body>
-	<div class="container">
-	<p>
-		<h5>Status of coffee machine</h5>  <br>
+	<div class="navbar-fixed">
+		<nav class="z-depth-0">
+			<div class="nav-wrapper">
+				<a href="#!" class="brand-logo">Logo</a>
+				<a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons notranslate">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="sass.html">Sass</a></li>
+					<li><a href="badges.html">Components</a></li>
+					<li><a href="collapsible.html">Javascript</a></li>
+					<li><a href="mobile.html">Mobile</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
-		<ul>
-			<li>
-				<i id="statusicon" class="material-icons notranslate"></i><span
-			id="statustext">loading ...</span>
-			</li>
-		</ul>
-		
-	</p> <br>
-	<p>
-		<h5>Report coffe machine status</h5> 
-		<div class="report-container">
-		<button id="btn-error" class="mdc-button btn-error">
-			<div class="mdc-button__ripple"></div>
-			<i class="material-icons mdc-button__icon notranslate"
-				aria-hidden="true">thumb_down</i>
-			<span class="mdc-button__label">doesn't work</span>
-		</button>
-		<button id="btn-fixed" class="mdc-button btn-fixed">
-			<div class="mdc-button__ripple"></div>
-			<i class="material-icons mdc-button__icon notranslate"
-				aria-hidden="true">thumb_up</i>
-			<span class="mdc-button__label">works</span>
-		</button>
-		</div>
-	</p>
-</div>
+	<ul class="sidenav" id="mobile-demo">
+		<li><a class="subheader">COFFEE STATUS</a></li>
+		<li><a href="badges.html">Components</a></li>
+		<li><a href="collapsible.html">Javascript</a></li>
+		<li><a href="mobile.html">Mobile</a></li>
+	</ul>
+
+	<div class="container">
+		<p>
+			<h5>Status of coffee machine</h5> <br>
+
+			<ul>
+				<li>
+					<i id="statusicon" class="material-icons notranslate"></i><span id="statustext">loading ...</span>
+				</li>
+			</ul>
+
+		</p> <br>
+		<p>
+			<h5>Report coffe machine status</h5>
+			<div class="report-container">
+				<button id="btn-error" class="mdc-button btn-error">
+					<div class="mdc-button__ripple"></div>
+					<i class="material-icons mdc-button__icon notranslate" aria-hidden="true">thumb_down</i>
+					<span class="mdc-button__label">doesn't work</span>
+				</button>
+				<button id="btn-fixed" class="mdc-button btn-fixed">
+					<div class="mdc-button__ripple"></div>
+					<i class="material-icons mdc-button__icon notranslate" aria-hidden="true">thumb_up</i>
+					<span class="mdc-button__label">works</span>
+				</button>
+			</div>
+		</p>
+	</div>
 
 
 

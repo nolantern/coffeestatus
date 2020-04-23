@@ -7,8 +7,8 @@ const cacheDynSize = -1;
 /*
 To update service worker and refreshe cache increase ...CacheName version
 */
-const staticCacheName = 'site-static-v5';
-const dynamicCacheName = 'site-dynamic-v5';
+const staticCacheName = 'site-static-v6';
+const dynamicCacheName = 'site-dynamic-v6';
 
 // static cached assets
 // todo assets anpassen
