@@ -7,20 +7,20 @@ const cacheDynSize = -1;
 /*
 To update service worker and refreshe cache increase ...CacheName version
 */
-const staticCacheName = 'site-static-v11';
-const dynamicCacheName = 'site-dynamic-v9';
+const staticCacheName = 'site-static-v12';
+const dynamicCacheName = 'site-dynamic-v10';
 
 // static cached assets
 // todo assets anpassen
 // cache external content
 const assets = [
-    '.',
-    './index.html',
-    './manifest.json',
-    './js/app.js',
-    './js/ui.js',
-    './css/styles.css',
-    './pages/fallback.html',
+    '/coffeestatus/',
+    '/coffeestatus/index.html',
+    '/coffeestatus/manifest.json',
+    '/coffeestatus/js/app.js',
+    '/coffeestatus/js/ui.js',
+    '/coffeestatus/css/styles.css',
+    '/coffeestatus/pages/fallback.html',
     // external resources
     // materil icon css and icons
     'https://fonts.googleapis.com/icon?family=Material+Icons',
@@ -115,7 +115,7 @@ console.log(evt.request);
                 .catch(() => {
                     // fallback.html
                     if (evt.request.url.indexOf('.html') > -1) {
-                        return caches.match('/pages/fallback.html');
+                        return caches.match('/coffeestatus/pages/fallback.html');
                     }
                     /* example for further usage
                     // fallback.png
