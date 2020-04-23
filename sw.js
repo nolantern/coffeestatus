@@ -7,8 +7,8 @@ const cacheDynSize = -1;
 /*
 To update service worker and refreshe cache increase ...CacheName version
 */
-const staticCacheName = 'site-static-v10';
-const dynamicCacheName = 'site-dynamic-v8';
+const staticCacheName = 'site-static-v11';
+const dynamicCacheName = 'site-dynamic-v9';
 
 // static cached assets
 // todo assets anpassen
@@ -20,7 +20,7 @@ const assets = [
     './js/app.js',
     './js/ui.js',
     './css/styles.css',
-    // TODO '/pages/fallback.html',
+    './pages/fallback.html',
     // external resources
     // materil icon css and icons
     'https://fonts.googleapis.com/icon?family=Material+Icons',
