@@ -90,6 +90,7 @@ self.addEventListener('fetch', evt => {
     // only cache if it's no firebase request
     if (evt.request.url.indexOf('firestore.googleapis.com') === -1) {
 
+console.log(evt.request);
 
         /*
         Use cached assets
