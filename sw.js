@@ -7,7 +7,7 @@ const cacheDynSize = -1;
 /*
 To update service worker and refreshe cache increase ...CacheName version
 */
-const staticCacheName = 'site-static-v12';
+const staticCacheName = 'site-static-v13';
 const dynamicCacheName = 'site-dynamic-v10';
 
 // static cached assets
@@ -89,8 +89,6 @@ self.addEventListener('fetch', evt => {
 
     // only cache if it's no firebase request
     if (evt.request.url.indexOf('firestore.googleapis.com') === -1) {
-
-console.log(evt.request);
 
         /*
         Use cached assets
