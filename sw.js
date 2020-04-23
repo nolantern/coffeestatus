@@ -7,12 +7,12 @@ const cacheDynSize = -1;
 /*
 To update service worker and refreshe cache increase ...CacheName version
 */
-const staticCacheName = 'site-static-v5';
-const dynamicCacheName = 'site-dynamic-v5';
+const staticCacheName = 'site-static-v11';
+const dynamicCacheName = 'site-dynamic-v9';
 
 // static cached assets
 // todo assets anpassen
-  // cache external content
+// cache external content
 const assets = [
     '.',
     './index.html',
@@ -20,17 +20,14 @@ const assets = [
     './js/app.js',
     './js/ui.js',
     './css/styles.css',
-	// TODO '/pages/fallback.html',
-	// external resources
-	  // materil icon css and icons
+    './pages/fallback.html',
+    // external resources
+    // materil icon css and icons
     'https://fonts.googleapis.com/icon?family=Material+Icons',
     'https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2',
-	  // material components
-	'https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css',
-	'https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js',
-	  // materialize
-	'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css',
-	'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'
+    // materialize
+    'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'
 ];
 
 /*
