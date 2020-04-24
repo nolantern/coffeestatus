@@ -17,3 +17,12 @@
 nav a{
   font-size: 1.5em;
 }
+
+/*
+Vertical alignment for material icons together with text
+*/
+.valign-wrapper {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+}
