@@ -42,7 +42,7 @@ const renderStatus = data => {
 
 		statusIcon.innerHTML = 'error';
 		statusIcon.style.color = 'red';
-		statusText.innerHTML = "There seems to be a problem with the coffee machine";
+		statusText.innerHTML = " Anscheinend gibt es ein Problem mit dem Kaffeautomat.";
 	/*
 	} else if (!data.milk) {
 		// coffee working, milk not
@@ -55,7 +55,7 @@ const renderStatus = data => {
 		// everything working
 		statusIcon.innerHTML = 'check_circle';
 		statusIcon.style.color = 'green';
-		statusText.innerHTML = 'Everything OK';
+		statusText.innerHTML = ' Der Kaffee Automat funktioniert.';
 	}
 
 };
