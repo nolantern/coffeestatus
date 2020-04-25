@@ -14,13 +14,13 @@ const dynamicCacheName = 'site-dynamic-v9';
 // todo assets anpassen
 // cache external content
 const assets = [
-    '.',
-    './index.html',
-    './manifest.json',
-    './js/app.js',
-    './js/ui.js',
-    './css/styles.css',
-    './pages/fallback.html',
+    '/',
+    '/index.html',
+    '/manifest.json',
+    '/js/app.js',
+    '/js/ui.js',
+    '/css/styles.css',
+    '/pages/fallback.html',
     // external resources
     // materil icon css and icons
     'https://fonts.googleapis.com/icon?family=Material+Icons',
