@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
 	<meta charset="UTF-8">
@@ -7,13 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Coffee Status</title>
 	<!-- material icons -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- materialize -->
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<!-- css, etc... -->
 	<link href="/coffeestatus/css/styles.css" rel="stylesheet">
 	<link rel="manifest" href="/coffeestatus/manifest.json">
@@ -25,13 +22,14 @@
 	<meta name="google" content="notranslate" />
 </head>
 
-<body>
+<body class="grey lighten-4">
 	<div class="navbar-fixed">
 		<nav>
 			<div class="nav-wrapper">
 				<a href="#!" class="hide-on-med-and-down">COFFEE STATUS</a>
 				<a href="#!" class="hide-on-large-only">Status</a>
-				<a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons notranslate">menu</i></a>
+				<a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i
+						class="material-icons notranslate">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 					<li class="active"><a href="#!">Status</a></li>
 				</ul>
@@ -43,24 +41,43 @@
 		<li><a class="subheader">COFFEE STATUS</a></li>
 	</ul>
 
+	<material-banner disabled id="offline-banner">
+		<span slot="icon">
+			<i class="material-icons notranslate">signal_wifi_off</i>
+		</span>
+		<span>
+			Das Gerät ist Offline. Inhalte sind möglicherweise veraltet.
+		</span>
+	</material-banner>
+
 	<div class="container">
-		<p>
-			<h5>Status of coffee machine</h5> <br>
+		<div class="row">
 
-			<ul>
-				<li class="valign-wrapper">
-					<i id="statusicon" class="material-icons notranslate"></i><span id="statustext">loading ...</span>
-				</li>
-			</ul>
-
-		</p> <br>
-		<p>
-			<h5>Report coffe machine status</h5>
-			<div class="report-container">
-				<a id="btn-error" class="right waves-effect waves-light btn"><i class="material-icons notranslate left">thumb_down</i>doesn't work</a>
-				<a id="btn-fixed" class="right waves-effect waves-light btn"><i class="material-icons notranslate left">thumb_up</i>works</a>
+			<div class="card">
+				<div class="card-content">
+					<span class="card-title">Status des Kaffeeautomats</span>
+					<p class="valign-wrapper">
+						<i id="statusicon" style="margin-right: 0.5em;" class="material-icons notranslate"></i>
+						<span id="statustext" class="">lade ...</span>
+					</p>
+				</div>
 			</div>
-		</p>
+
+			<div class="card ">
+				<div class="card-content ">
+					<span class="card-title">Status Aktualisieren</span>
+					<p>Funktioniert der Kaffeeautomat?</p>
+				</div>
+				<div class="card-action report-container right-align">
+
+					<a id="btn-error" class="waves-effect" href="#!"><i
+							class="material-icons notranslate left">thumb_down</i>NEIN</a>
+
+					<a id="btn-fixed" class="waves-effect"><i class="material-icons notranslate left">thumb_up</i>JA</a>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
 
@@ -71,11 +88,9 @@
 	<!-- firebase -->
 
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script
-		src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
 
-	<script
-		src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
 
 	<script>
 		// Your web app's Firebase configuration
@@ -98,6 +113,7 @@
 	<script src="/coffeestatus/js/app.js"></script>
 	<script src="/coffeestatus/js/db.js"></script>
 	<script src="/coffeestatus/js/ui.js"></script>
+	<script src="https://nolantern.github.io/material-banner/js/material-banner-min.js"></script>
 </body>
 
 </html>
