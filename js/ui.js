@@ -59,3 +59,14 @@ const renderStatus = data => {
 	}
 
 };
+
+/* Online/Offline listener */
+window.addEventListener("offline", function (e) {
+	const banner = document.getElementById('offline-banner')
+	banner.disabled = false;
+}, false);
+
+window.addEventListener("online", function (e) {
+	const banner = document.getElementById('offline-banner')
+	banner.disabled = true;
+}, false);

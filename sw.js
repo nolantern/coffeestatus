@@ -7,7 +7,7 @@ const cacheDynSize = -1;
 /*
 To update service worker and refreshe cache increase ...CacheName version
 */
-const staticCacheName = 'site-static-v17';
+const staticCacheName = 'site-static-v19';
 const dynamicCacheName = 'site-dynamic-v10';
 
 // static cached assets
@@ -27,7 +27,9 @@ const assets = [
     'https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2',
     // materialize
     'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css',
-    'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'
+    'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js',
+    // material banner (selfmade)
+    'https://nolantern.github.io/material-banner/js/material-banner-min.js'
 ];
 
 /*
